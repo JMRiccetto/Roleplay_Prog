@@ -6,5 +6,11 @@ namespace Roleplay_Prog.Library
     {
         public int Ataque;
         public int Defensa;
+
+        public Yelmo(int ataque, int defensa)
+        {
+            this.Ataque = ataque;
+            this.Defensa = defensa;
+        }
     }
 }
