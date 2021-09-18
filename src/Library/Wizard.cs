@@ -9,7 +9,7 @@ namespace Program
         public LibroHechizos LibroHechizos;
         public TunicaCuero ItemDef;
 
-        public Wizard (string aName, int aVida, string aLibroHechizos, string aItemDef)
+        public Wizard (string aName, int aVida, LibroHechizos aLibroHechizos, TunicaCuero aItemDef)
         {
             Nombre = aName;
             Vida = aVida;
