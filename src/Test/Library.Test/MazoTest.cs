@@ -36,7 +36,7 @@ namespace Test.Library
         public void AsignarDefensaNegativa()
         {
             this.mazo.Defensa = -20;
-            Assert.Equals(this.mazo.Defensa, 0);
+            Assert.AreEqual(this.mazo.Defensa, 0);
         }
     }
 
