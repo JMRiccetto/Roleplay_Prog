@@ -1,6 +1,6 @@
 using System;
 
-namespace Program
+namespace Roleplay_Prog.Library
 {
     class Wizard
     {
