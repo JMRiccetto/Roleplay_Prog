@@ -14,7 +14,7 @@ namespace Program
             Nombre = aName;
             Vida = aVida;
             LibroHechizos = aLibroHechizos;
-            Itemdef = aItemDef;
+            ItemDef = aItemDef;
         }
     }
 
