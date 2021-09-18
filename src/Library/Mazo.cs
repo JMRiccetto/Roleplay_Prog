@@ -19,7 +19,7 @@ namespace Roleplay_Prog.Library
                 }
                 else
                 {
-                    this.ataque = 0;
+                    this.Ataque = 0;
                 }
             }
         }
@@ -34,11 +34,11 @@ namespace Roleplay_Prog.Library
             {
                 if(value >=0)
                 {
-                    this.Ataque = value;
+                    this.Defensa = value;
                 }
                 else
                 {
-                    this.ataque = 0;
+                    this.Defensa = 0;
                 } 
             }
         }
