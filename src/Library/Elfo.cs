@@ -81,8 +81,8 @@ namespace Roleplay_Prog.Library
 
         public void Curarse()
         {
-            Elfo elfo1 = new elfo("Elfo1");
-            this.vida = orco1.vida;
+            Elfo elfo1 = new Elfo("Elfo1");
+            this.vida = elfo1.vida;
         }
     }
 }
