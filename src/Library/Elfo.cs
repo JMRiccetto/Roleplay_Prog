@@ -39,7 +39,7 @@ namespace Roleplay_Prog.Library
             }
         }
         public Arco ItemOf;
-        public  ItemDef;
+        public Armadura ItemDef;
 
         public Elfo(string nombre)
         {
