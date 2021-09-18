@@ -46,7 +46,7 @@ namespace Roleplay_Prog.Library
         {
             get; set;
         }
-                public Orco(string nombre)
+        public Wizard(string nombre)
         {
             this.Nombre = nombre;
         }
