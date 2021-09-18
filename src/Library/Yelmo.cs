@@ -38,11 +38,7 @@ namespace Roleplay_Prog.Library
                 }
                 else
                 {
-<<<<<<< HEAD
                     this.Defensa = 0;
-=======
-                    this.defensa = 0;
->>>>>>> master
                 } 
             }
         }
