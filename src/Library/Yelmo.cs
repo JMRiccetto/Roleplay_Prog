@@ -42,6 +42,7 @@ namespace Roleplay_Prog.Library
                 } 
             }
         }
+
         public Yelmo(int ataque, int defensa)
         {
             this.Ataque = ataque;
