@@ -38,7 +38,7 @@ namespace Roleplay_Prog.Library
                 }
                 else
                 {
-                    this.defensa = 0;
+                    this.Defensa = 0;
                 } 
             }
         }
