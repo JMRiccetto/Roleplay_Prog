@@ -15,7 +15,7 @@ namespace Roleplay_Prog.Library
 
         public int AtaqueSpell()
         {
-            return spell.Ataque;
+            return this.Spell.Ataque;
         }
     }
 }
