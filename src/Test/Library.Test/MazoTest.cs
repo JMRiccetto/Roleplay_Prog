@@ -18,19 +18,19 @@ namespace Test.Library
         public void AsignarAtaqueValido()
         {
             this.mazo.Ataque = 10;
-            Assert.Equals(this.mazo.Ataque, 10);
+            Assert.AreEqual(this.mazo.Ataque, 10);
         }
         [Test]
         public void AsignarAtaqueNegativo()
         {
             this.mazo.Ataque = -10;
-            Assert.Equals(this.mazo.Ataque, 0);
+            Assert.AreEqual(this.mazo.Ataque, 0);
         }
         [Test]
         public void AsignarDefensaValida()
         {
             this.mazo.Defensa = 30;
-            Assert.Equals(this.mazo.Defensa, 30);
+            Assert.AreEqual(this.mazo.Defensa, 30);
         }
         [Test]
         public void AsignarDefensaNegativa()
