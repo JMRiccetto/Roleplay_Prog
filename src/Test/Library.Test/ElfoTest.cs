@@ -45,7 +45,7 @@ namespace Test.Library
         [Test]
         public void VidaValidaTest()
         {
-            this.elfo.Vida= 20;
+            this.elfo.Vida= 30;
             Assert.AreEqual(this.elfo.Vida, 30);
         }
         /*
@@ -95,7 +95,7 @@ namespace Test.Library
          [Test]
         public void CambiarItemDefTest()
         {
-            Escudo armaduraNue = new Armadura(0,40);
+            Armadura armaduraNue = new Armadura(0,40);
             this.elfo.CambiarItemDef(armaduraNue);
             Assert.AreEqual(this.elfo.ItemDef, armaduraNue);
         }
@@ -117,7 +117,7 @@ namespace Test.Library
         [Test]
         public void DanioRecibidoMenorOIgualQueArmaduraTest()
         {
-            this.elfo.DanioRecibido(30);
+            this.elfo.DanioRecibido(20);
             Assert.AreEqual(this.elfo.Vida, 90);
         }
         /*
@@ -129,7 +129,7 @@ namespace Test.Library
         public void DanioRecibidoMayorQueArmaduraTest()
         {
             this.elfo.DanioRecibido(40);
-            Assert.AreEqual(this.elfo.Vida, 80);
+            Assert.AreEqual(this.elfo.Vida, 70);
         }
         /*
             Es necesario probar este metodo para confirmar que

@@ -22,7 +22,7 @@ namespace Test.Library
         [Test]
         public void AsignarAtaqueValido()
         {
-            this.Arco.Ataque = 10;
+            this.arco.Ataque = 10;
             Assert.AreEqual(this.arco.Ataque, 10);
         }
         /*

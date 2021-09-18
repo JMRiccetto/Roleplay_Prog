@@ -33,7 +33,7 @@ namespace Test.Library
         public void AsignarAtaqueNegativo()
         {
             this.armadura.Ataque = -10;
-            Assert.AreEqual(this.escudo.Ataque, 0);
+            Assert.AreEqual(this.armadura.Ataque, 0);
         }
         /*
             Es necesario probar la asignacion de una defensa valida para
