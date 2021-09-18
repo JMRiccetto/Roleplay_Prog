@@ -6,17 +6,17 @@ namespace Test.Library
 {
 
 
-    public class EnanoTest
+    public class ElfoTest
     {
-        private Enano enano;
+        private Elfo elfo;
         [SetUp]
         public void Setup()
         {
-            this.enano = new Enano("Robertinho");
-            Cuchillo cuchillo = new Cuchillo(60,0);
-            this.enano.CambiarItemOf(cuchillo);
-            Escudo escudo = new Escudo(0,30);
-            this.enano.CambiarItemDef(escudo);
+            this.elfo = new Elfo("Elfo1");
+            Arco arco = new Arco(20,0);
+            this.elfo.CambiarItemOf(arco);
+            Armadura armadura = new Armadura(0,20);
+            this.elfo.CambiarItemDef(armadura);
         }
         /*
             Es necesario probar la asignacion de un nombre valido para
@@ -25,8 +25,8 @@ namespace Test.Library
         [Test]
         public void NombreValidoTest()
         {
-            this.enano.Nombre= "Fatiga";
-            Assert.AreEqual(this.enano.Nombre, "Fatiga");
+            this.elfo.Nombre= "Ebola";
+            Assert.AreEqual(this.elfo.Nombre, "Ebola");
         }
         /*
             Es necesario probar la asignacion de un nombre invalido para
@@ -35,8 +35,8 @@ namespace Test.Library
         [Test]
         public void NombreInvalidoTest()
         {
-            this.enano.Nombre= "";
-            Assert.AreEqual(this.enano.Nombre, "Robertinho");
+            this.elfo.Nombre= "";
+            Assert.AreEqual(this.elfo.Nombre, "Elfo1");
         }
         /*
             Es necesario probar la asignacion de un valor de vida valido para
@@ -45,8 +45,8 @@ namespace Test.Library
         [Test]
         public void VidaValidaTest()
         {
-            this.enano.Vida= 20;
-            Assert.AreEqual(this.enano.Vida, 20);
+            this.elfo.Vida= 30;
+            Assert.AreEqual(this.elfo.Vida, 30);
         }
         /*
             Es necesario probar la asignacion de un valor de vida invalido para
@@ -55,8 +55,8 @@ namespace Test.Library
         [Test]
         public void VidaInvalidaTest()
         {
-            this.enano.Vida= -60;
-            Assert.AreEqual(this.enano.Vida, 0);
+            this.elfo.Vida= -60;
+            Assert.AreEqual(this.elfo.Vida, 0);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -65,7 +65,7 @@ namespace Test.Library
         [Test]
         public void GetAtaqueTest()
         {
-            Assert.AreEqual(this.enano.GetAtaque(), this.enano.ItemOf.Ataque);
+            Assert.AreEqual(this.elfo.GetAtaque(), this.elfo.ItemOf.Ataque);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -74,9 +74,9 @@ namespace Test.Library
         [Test]
         public void CambiarItemOfTest()
         {
-            Cuchillo cuchilloNue = new Cuchillo(40,0);
-            this.enano.CambiarItemOf(cuchilloNue);
-            Assert.AreEqual(this.enano.GetAtaque(), cuchilloNue.Ataque);
+            Arco arcoNue = new Arco(60,0);
+            this.elfo.CambiarItemOf(arcoNue);
+            Assert.AreEqual(this.elfo.GetAtaque(), arcoNue.Ataque);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -85,8 +85,8 @@ namespace Test.Library
         [Test]
         public void QuitarItemOfTest()
         {
-            this.enano.QuitarItemOf();
-            Assert.AreEqual(this.enano.ItemOf, null);
+            this.elfo.QuitarItemOf();
+            Assert.AreEqual(this.elfo.ItemOf, null);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -95,9 +95,9 @@ namespace Test.Library
          [Test]
         public void CambiarItemDefTest()
         {
-            Escudo escudoNue = new Escudo(0,50);
-            this.enano.CambiarItemDef(escudoNue);
-            Assert.AreEqual(this.enano.ItemDef, escudoNue);
+            Armadura armaduraNue = new Armadura(0,40);
+            this.elfo.CambiarItemDef(armaduraNue);
+            Assert.AreEqual(this.elfo.ItemDef, armaduraNue);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -106,8 +106,8 @@ namespace Test.Library
         [Test]
         public void QuitarItemDefTest()
         {
-            this.enano.QuitarItemDef();
-            Assert.AreEqual(this.enano.ItemDef, null);
+            this.elfo.QuitarItemDef();
+            Assert.AreEqual(this.elfo.ItemDef, null);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -117,8 +117,8 @@ namespace Test.Library
         [Test]
         public void DanioRecibidoMenorOIgualQueArmaduraTest()
         {
-            this.enano.DanioRecibido(20);
-            Assert.AreEqual(this.enano.Vida, 110);
+            this.elfo.DanioRecibido(20);
+            Assert.AreEqual(this.elfo.Vida, 90);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -128,8 +128,8 @@ namespace Test.Library
         [Test]
         public void DanioRecibidoMayorQueArmaduraTest()
         {
-            this.enano.DanioRecibido(40);
-            Assert.AreEqual(this.enano.Vida, 100);
+            this.elfo.DanioRecibido(40);
+            Assert.AreEqual(this.elfo.Vida, 70);
         }
         /*
             Es necesario probar este metodo para confirmar que
@@ -139,8 +139,9 @@ namespace Test.Library
         [Test]
         public void DanioRecibidoMayorQueArmaduraYVidaTest()
         {
-            this.enano.DanioRecibido(300);
-            Assert.AreEqual(this.enano.Vida, 0);
+            this.elfo.DanioRecibido(300);
+            Assert.AreEqual(this.elfo.Vida, 0);
+            
         }
         /*
             Es necesario probar este metodo para confirmar que al curarse queda con la misma vida inicial.
@@ -148,11 +149,10 @@ namespace Test.Library
         [Test]
         public void CurarseTest()
         {
-            this.enano.Vida = 20;
-            this.enano.Curarse();
-            Assert.AreEqual(this.enano.Vida, 110);
+            this.elfo.Vida = 20;
+            this.elfo.Curarse();
+            Assert.AreEqual(this.elfo.Vida, 90);
         }
-
     }
 
 

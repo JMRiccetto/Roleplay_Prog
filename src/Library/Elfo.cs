@@ -75,14 +75,13 @@ namespace Roleplay_Prog.Library
             if(this.ItemDef.Defensa < danio)
             {
                 danio -= this.ItemDef.Defensa;
-                this.vida -= danio;
+                this.Vida -= danio;
             }
         }
 
         public void Curarse()
         {
-            Elfo elfo1 = new Elfo("Elfo1");
-            this.vida = elfo1.vida;
+            this.vida = 90;
         }
     }
 }
