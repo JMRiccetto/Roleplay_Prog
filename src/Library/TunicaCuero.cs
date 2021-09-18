@@ -2,20 +2,20 @@ using System;
 
 namespace Roleplay_Prog.Library
 {
-    class TunicaCuero
+    public class TunicaCuero
     {
         private int ataque;
         public int Ataque
         {
             get
             {
-                return this.Ataque;
+                return this.ataque;
             }
             set
             {
                 if(value >=0)
                 {
-                    this.Ataque = value;
+                    this.ataque = value;
                 }
                 else
                 {
@@ -28,17 +28,17 @@ namespace Roleplay_Prog.Library
         {
             get
             {
-                return this.Defensa;
+                return this.defensa;
             }
             set
             {
                 if(value >=0)
                 {
-                    this.Defensa = value;
+                    this.defensa = value;
                 }
                 else
                 {
-                    this.Defensa = 0;
+                    this.defensa = 0;
                 } 
             }
         }

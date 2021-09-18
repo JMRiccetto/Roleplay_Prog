@@ -9,19 +9,23 @@ namespace Roleplay_Prog.Library
         {
             get
             {
-                return this.Ataque;
+                return this.ataque;
             }
             set
             {
                 if(value >=0)
                 {
-                    this.Ataque = value;
+                    this.ataque = value;
                 }
                 else
                 {
                     this.ataque = 0;
                 }
             }
+        }
+        public Spell(int aAtaque)
+        {
+            ataque = aAtaque;
         }
     }
 }

@@ -2,7 +2,7 @@ using System;
 
 namespace Roleplay_Prog.Library
 {
-    class LibroHechizos
+    public class LibroHechizos
     {
         public Spell Spell
         {
