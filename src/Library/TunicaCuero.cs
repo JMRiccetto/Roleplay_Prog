@@ -4,12 +4,7 @@ namespace Roleplay_Prog.Library
 {
     class TunicaCuero
     {
-        public int Ataque;
-        public int Defensa;
-
-        public TunicaCuero(int aAtaque, int aDefensa)
-        {
-            private int ataque;
+        private int ataque;
         public int Ataque
         {
             get
@@ -47,6 +42,10 @@ namespace Roleplay_Prog.Library
                 } 
             }
         }
+        public TunicaCuero(int aAtaque, int aDefensa)
+        {
+            this.Ataque = aAtaque;
+            this.Defensa = aDefensa;
         }
     }
 }
