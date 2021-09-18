@@ -1,4 +1,5 @@
 ﻿using System;
+using Roleplay_Prog.Library;
 
 namespace Roleplay_Prog
 {
@@ -6,11 +7,8 @@ namespace Roleplay_Prog
     {
         static void Main(string[] args)
         {
-           Enano fafnir = new Enano("Fafnir", 100, "cuchillo", "escudo");
-            
+          
         }
-
-
     }
 
 }
