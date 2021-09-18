@@ -1,10 +1,21 @@
 using System;
 
-namespace Program
+namespace Roleplay_Prog.Library
 {
     class LibroHechizos
     {
-        public int Hechizos = 100;
-        public int Defensa = 0;
+        public Spell Spell
+        {
+            get; set;
+        }
+        public LibroHechizos(Spell aSpell)
+        {
+            this.Spell = aSpell;
+        }
+
+        public int AtaqueSpell()
+        {
+            return spell.Ataque;
+        }
     }
 }
