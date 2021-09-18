@@ -23,5 +23,9 @@ namespace Roleplay_Prog.Library
                 }
             }
         }
+        public Spell(int aAtaque)
+        {
+            ataque = aAtaque;
+        }
     }
 }

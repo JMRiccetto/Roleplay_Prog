@@ -2,7 +2,7 @@ using System;
 
 namespace Roleplay_Prog.Library
 {
-    class Wizard
+    public class Wizard
     {
         private string nombre;
         public string Nombre
@@ -80,14 +80,13 @@ namespace Roleplay_Prog.Library
             if(this.ItemDef.Defensa < danio)
             {
                 danio -= this.ItemDef.Defensa;
-                this.vida -= danio;
+                this.Vida -= danio;
             }
         }
 
         public void Curarse()
         {
-            Wizard wizard1 = new Wizard("Harry");
-            this.vida = wizard1.vida;
+            this.Vida = 80;
         }
     }
 

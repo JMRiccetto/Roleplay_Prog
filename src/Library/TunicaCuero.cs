@@ -2,7 +2,7 @@ using System;
 
 namespace Roleplay_Prog.Library
 {
-    class TunicaCuero
+    public class TunicaCuero
     {
         private int ataque;
         public int Ataque
