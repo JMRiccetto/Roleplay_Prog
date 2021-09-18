@@ -19,7 +19,7 @@ namespace Roleplay_Prog.Library
                 }
                 else
                 {
-                    this.ataque = 0;
+                    this.Ataque = 0;
                 }
             }
         }
@@ -38,10 +38,11 @@ namespace Roleplay_Prog.Library
                 }
                 else
                 {
-                    this.defensa = 0;
+                    this.Defensa = 0;
                 } 
             }
         }
+
         public Yelmo(int ataque, int defensa)
         {
             this.Ataque = ataque;
