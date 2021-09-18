@@ -2,6 +2,13 @@ using System;
 
 namespace Roleplay_Prog.Library
 {
+    /*
+        Para la parte 3 decidimos implementar los metodos a 
+        esta clase porque la consideramos la experta
+        en la informacion que se necesita para poder llevarlos a cabo.
+        A partir de este se rompe el SRP ya que hay varias
+        razones de cambio pero lo vimos necesario.
+    */
     public class Elfo
     {
         private string nombre;
