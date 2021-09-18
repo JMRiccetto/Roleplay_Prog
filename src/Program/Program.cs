@@ -7,7 +7,6 @@ namespace Roleplay_Prog
     {
         static void Main(string[] args)
         {
-          
         }
     }
 
