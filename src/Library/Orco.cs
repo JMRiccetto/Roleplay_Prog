@@ -38,8 +38,8 @@ namespace Roleplay_Prog.Library
                 }
             }
         }
-        public Mazo ItemOf;
-        public Yelmo ItemDef;
+        public Mazo ItemOf{get;set;}
+        public Yelmo ItemDef{get;set;}
 
         public Orco(string nombre)
         {
@@ -75,14 +75,13 @@ namespace Roleplay_Prog.Library
             if(this.ItemDef.Defensa < danio)
             {
                 danio -= this.ItemDef.Defensa;
-                this.vida -= danio;
+                this.Vida -= danio;
             }
         }
 
         public void Curarse()
         {
-            Orco orco1 = new Orco("Jose");
-            this.vida = orco1.vida;
+            this.Vida = 130;
         }
     }
 }
