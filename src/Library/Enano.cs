@@ -75,7 +75,7 @@ namespace Roleplay_Prog.Library
             if(this.ItemDef.Defensa < danio)
             {
                 danio -= this.ItemDef.Defensa;
-                this.vida -= danio;
+                this.Vida -= danio;
             }
         }
 
