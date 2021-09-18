@@ -42,7 +42,7 @@ namespace Roleplay_Prog.Library
         {
             get; set;
         }
-        public TunicaCuero Itemdef
+        public TunicaCuero ItemDef
         {
             get; set;
         }
@@ -60,9 +60,9 @@ namespace Roleplay_Prog.Library
         {
             this.LibroHechizos = null;
         }
-        public void CambiarItemDef(Yelmo yelmo)
+        public void CambiarItemDef(TunicaCuero tunicaCuero)
         {
-            this.ItemDef = yelmo;
+            this.ItemDef = tunicaCuero;
         }
 
         public void QuitarItemDef()
