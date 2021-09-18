@@ -144,6 +144,9 @@ namespace Test.Library
             this.wizard.DanioRecibido(300);
             Assert.AreEqual(this.wizard.Vida, 0);
         }
+        /*
+            Es necesario probar este metodo para confirmar que al curarse queda con la misma vida inicial.
+        */
         [Test]
         public void CurarseTest()
         {

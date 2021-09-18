@@ -142,6 +142,10 @@ namespace Test.Library
             this.orco.DanioRecibido(300);
             Assert.AreEqual(this.orco.Vida, 0);
         }
+
+        /*
+            Es necesario probar este metodo para confirmar que al curarse queda con la misma vida inicial.
+        */
         [Test]
         public void CurarseTest()
         {
@@ -149,6 +153,7 @@ namespace Test.Library
             this.orco.Curarse();
             Assert.AreEqual(this.orco.Vida, 130);
         }
+        
     }
 
 
